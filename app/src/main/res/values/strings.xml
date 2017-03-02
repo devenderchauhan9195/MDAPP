@@ -1,3 +1,10 @@
-<resources>
+ <resources>
     <string name="app_name">MDAPP</string>
-</resources>
+     <string name="Email">Email</string>
+     <string name="password">Password</string>
+     <string name="forgot_password">Forgot Password?</string>
+  <string name="click_here"><u>Click Here</u></string>
+     <string name="signin_now">Signin Now</string>
+     <string name="Signup">Don\'t have an account? Please Signup</string>
+
+ </resources>
