@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/splash_bg"
-    tools:context="in.example.deb.mdapp.view.activity.LogInActivity">
+    tools:context="in.example.deb.mdapp.view.activity.login.LogInActivity">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -70,6 +70,7 @@
 
         </LinearLayout>
         <Button
+            android:onClick="SigninNow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/signin_now"

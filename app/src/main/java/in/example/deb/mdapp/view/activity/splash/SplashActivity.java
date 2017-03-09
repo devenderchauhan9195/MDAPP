@@ -1,4 +1,4 @@
-package in.example.deb.mdapp.view.activity;
+package in.example.deb.mdapp.view.activity.splash;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import in.example.deb.mdapp.R;
+import in.example.deb.mdapp.view.activity.login.LogInActivity;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -22,6 +23,7 @@ public class SplashActivity extends AppCompatActivity {
 
                 Intent intent=new Intent(SplashActivity.this,LogInActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
     }
