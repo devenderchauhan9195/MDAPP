@@ -1,6 +1,6 @@
 package in.example.deb.mdapp.view.activity.login;
 
-import in.example.deb.mdapp.model.proterties.login.LoginResultPrp;
+import in.example.deb.mdapp.model.proterties.proterties.login.LoginResultPrp;
 
 /**
  * Created by Deb on 06-03-2017.

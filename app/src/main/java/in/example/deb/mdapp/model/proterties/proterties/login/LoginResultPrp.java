@@ -1,5 +1,5 @@
 
-package in.example.deb.mdapp.model.proterties.login;
+package in.example.deb.mdapp.model.proterties.proterties.login;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

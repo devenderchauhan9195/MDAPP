@@ -1,13 +1,11 @@
 package in.example.deb.mdapp.view.activity.login;
 
 import android.app.Activity;
-import android.telecom.Call;
-import android.widget.Toast;
 
 import in.example.deb.mdapp.R;
 import in.example.deb.mdapp.model.networkconnection.propertie.login.BaseUrl;
 import in.example.deb.mdapp.model.networkconnection.propertie.login.webInterface;
-import in.example.deb.mdapp.model.proterties.login.LoginResultPrp;
+import in.example.deb.mdapp.model.proterties.proterties.login.LoginResultPrp;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
@@ -69,16 +67,19 @@ public class LogInPresenter extends BaseUrl implements IlogInPresenter {
     }
 
     private void makeLoginRequest(String email,String password) {
+        logInView.startProgress();
         Retrofit retrofit = new Retrofit.Builder().baseUrl(baseUrl).addConverterFactory(GsonConverterFactory.create()).build();
         final retrofit2.Call<LoginResultPrp> result = retrofit.create(webInterface.class).requestLogin(email, password);
         result.enqueue(new Callback<LoginResultPrp>() {
             @Override
             public void onResponse(retrofit2.Call<LoginResultPrp> call, Response<LoginResultPrp> response) {
+                logInView.stopProgress();
                 logInView.onCompleteLogin(response.body());
             }
 
             @Override
             public void onFailure(retrofit2.Call<LoginResultPrp> call, Throwable t) {
+                logInView.stopProgress();
                 logInView.showFeedbackMessage(activity.getString(R.string.wrongpassword));
             }
 

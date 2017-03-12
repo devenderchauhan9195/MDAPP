@@ -1,5 +1,5 @@
 
-package in.example.deb.mdapp.model.proterties.login;
+package in.example.deb.mdapp.model.proterties.proterties.registration;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
@@ -8,7 +8,7 @@ public class Result {
 
     @SerializedName("status")
     @Expose
-    private String status;
+    private Integer status;
     @SerializedName("id")
     @Expose
     private String id;
@@ -16,11 +16,11 @@ public class Result {
     @Expose
     private String message;
 
-    public String getStatus() {
+    public Integer getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(Integer status) {
         this.status = status;
     }
 

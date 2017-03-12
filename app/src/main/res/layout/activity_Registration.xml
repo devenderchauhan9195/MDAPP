@@ -16,7 +16,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:paddingLeft="50dp"
-        android:id="@+id/layoutLogin"
+        android:id="@+id/layoutRegistration"
         android:paddingRight="50dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -25,11 +25,35 @@
             android:layout_width="match_parent"
             android:padding="10dp"
             android:layout_height="wrap_content"
-            android:hint="@string/Email"
-            android:inputType="textEmailAddress"
+            android:hint="@string/Username"
+            android:inputType="textPersonName"
             android:gravity="center"
             android:background="@drawable/loginbuttonstyle"
-            android:id="@+id/EditTextEmail"/>
+            android:id="@+id/EditTextUserName"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/Email"
+            android:gravity="center"
+            android:background="@drawable/loginbuttonstyle"
+            android:id="@+id/EditTextEmail"
+            android:inputType="textEmailAddress"
+            android:layout_below="@+id/EditTextUserName"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/Mobile"
+            android:gravity="center"
+            android:background="@drawable/loginbuttonstyle"
+            android:id="@+id/EditTextMobileNumber"
+            android:inputType="phone"
+            android:layout_below="@+id/EditTextEmail"/>
+
         <EditText
             android:layout_width="match_parent"
             android:padding="10dp"
@@ -40,57 +64,29 @@
             android:background="@drawable/loginbuttonstyle"
             android:id="@+id/EditTextPassword"
             android:inputType="textPassword"
-            android:layout_below="@+id/EditTextEmail"/>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:id="@+id/LinearLayoutforgotPassword"
-            android:weightSum="2"
-            android:orientation="horizontal"
-            android:layout_below="@+id/EditTextPassword">
+            android:layout_below="@+id/EditTextMobileNumber"/>
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:textSize="26px"
-                android:textColor="@color/colorAccent"
-                android:textStyle="bold"
-                android:text="@string/forgot_password"/>
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:textStyle="bold"
-                android:textSize="26px"
-                android:gravity="right"
-                android:textColor="@color/colorAccent"
-                android:text="@string/click_here"/>
-
-        </LinearLayout>
         <Button
-            android:onClick="SigninNow"
+            android:onClick="SignUpNow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/signin_now"
+            android:text="@string/Signupnow"
             android:textAllCaps="false"
-            android:id="@+id/buttonSigninNow"
-            android:layout_below="@+id/LinearLayoutforgotPassword"
+            android:id="@+id/buttonSignupNow"
+            android:layout_below="@+id/EditTextPassword"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:paddingRight="30dp"
             android:paddingLeft="30dp"
             android:background="@drawable/splashbuttonstyle"
             android:textColor="#ffffff"
             android:textStyle="bold"/>
         <TextView
-            android:onClick="SignUpNow"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:layout_below="@+id/buttonSigninNow"
-            android:text="@string/Signup"
+            android:layout_below="@+id/buttonSignupNow"
+            android:text="@string/AlreadyHaveAccount"
             android:textColor="@color/colorAccent"
             android:textStyle="bold"
             android:gravity="center"

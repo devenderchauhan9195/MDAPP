@@ -6,8 +6,30 @@
     <string name="click_here"><u>Click Here</u></string>
     <string name="signin_now">Signin Now</string>
     <string name="Signup">Don\'t have an account? Please Signup</string>
-    <string name="wrongpassword">Wrong User Name Password</string>
+    <string name="wrongpassword">Wrong User And Name Password</string>
     <string name="emailempty">Please Enter Email.</string>
     <string name="passwordempty">Please Enter Password.</string>
+    <string name="Username">User Name</string>
+    <string name="Mobile">Mobile Number</string>
+    <string name="Signupnow">Signup Now</string>
+    <string name="AlreadyHaveAccount">Already Have Account ? Please SignIn</string>
+    <string name="loadingPleaseWait">Loading Please Wait........</string>
+    <string name="feedback">Feedback</string>
+    <string name="ok">OK</string>
+    <string name="internetconnectionerror">Internet Connection Lost. Please Check Your WiFi or Mobile Network.</string>
+    <string name="thisemailalreadyexist">This Email Already Exist</string>
+    <string name="wrongusernameorpassword">Wrong UserName or Password.</string>
+    <string name="emptyusername">Please Enter User Name.</string>
+    <string name="emptyemail">Please Enter Email.</string>
+    <string name="emptypassword">Please Enter Password</string>
+    <string name="emptyphone">Please Mobile Number.</string>
+    <string name="registersucessful">You Are Registred Sucessfully.</string>
+    <string name="registrationprocess">Registration In Process......</string>
+    <string name="Address">Address</string>
+    <string name="City">City</string>
+    <string name="State">State</string>
+    <string name="pincode">Pincode</string>
+    <string name="Country">Country</string>
+    <string name="UpdateInfo">Update Info</string>
 
 </resources>

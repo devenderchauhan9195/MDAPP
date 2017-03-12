@@ -1,4 +1,4 @@
-package in.example.deb.mdapp.utils.customcontrols.dialogs.connectionutls;
+package in.example.deb.mdapp.utils.customcontrols.dialogs.connectionutils;
 
 import android.app.Activity;
 import android.content.Context;
